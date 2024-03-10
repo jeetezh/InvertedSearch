@@ -1,6 +1,6 @@
 /*Doc
 Name: Jeetesh R
-Date: 10--303-2024
+Date: 10-03-2024
 Description: Inverted search using c programming
 Tool used : GCC
 Doc*/
