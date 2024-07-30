@@ -17,7 +17,6 @@ void create_database(Flist *f_head, Wlist *head[])
 // read contents of file
 Wlist * read_datafile(Flist *file, Wlist *head[], char *filename)
 {
-    int flag = 1;
     //open the file read mode
     FILE *fptr = fopen(filename , "r");
 	if(fptr==NULL)
@@ -31,6 +30,7 @@ Wlist * read_datafile(Flist *file, Wlist *head[], char *filename)
 
     while(fscanf(fptr , "%s" , word) != EOF)
     {
+	int flag = 1;
 	//index 
 	int index = tolower(word[0]) % 97 ;
 
